@@ -1,6 +1,8 @@
-# My-Node-Setup
+# FORM-SUBMISSION_COLLECTOR_BACKEND
 
-This repo serves as a project setup for one of my favourite tech stacks 🌟
+This repo serves as a backend for 'Form Submission Collector'.
+
+The Tech Stack 🌟
 
 [TypeScript](https://www.typescriptlang.org/download) : You know it! \
 [Volta](https://volta.sh/) : The JavaScript Tool Manager \
