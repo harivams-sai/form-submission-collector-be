@@ -8,7 +8,7 @@ const resolvers = {
 
   Query: {
     submissions: () => {
-      db.submission.findMany({ orderBy: { submittedAt: 'desc' }});
+      return db.submission.findMany({ orderBy: { submittedAt: 'desc' }});
     },
   },
 };

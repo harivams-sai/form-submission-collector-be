@@ -1,6 +1,5 @@
 import express from 'express';
 import morgan from 'morgan';
-// import db from './modules/db';
 import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
 import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
@@ -43,7 +42,6 @@ const startServer = async () => {
 
   const port = Number(process.env.PORT || 8080);
 
-  // Modified server startup
   await new Promise<void>((resolve) =>
     httpServer.listen({ host: '0.0.0.0', port }, resolve)
   );
@@ -52,11 +50,3 @@ const startServer = async () => {
 
 startServer();
 
-// app.get('/', async (req, res) => {
-//   const submissions = await db.submission.findMany();
-//   res.json(submissions);
-// });
-
-// app.listen(port, '0.0.0.0', () => {
-//   console.log(`Server listening at http://localhost:${port}`);
-// });
